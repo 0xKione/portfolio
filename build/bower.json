@@ -1,0 +1,20 @@
+{
+  "name": "Tiamat",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "~1.11.3",
+	"jquery-ui": "~1.11.4",
+	"jquery-reveal": "*",
+	"jquery.browser": "~0.0.7",
+	"bootstrap": "~3.3.4",
+	"underscore": "~1.8.3"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
