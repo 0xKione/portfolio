@@ -1,4 +1,11 @@
 /css/vendor
+
 /js/vendor
+
 /build/bower_components
+
 /build/node_modules
+
+/*.user
+
+/*.suo
