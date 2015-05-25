@@ -213,10 +213,6 @@
     <Compile Include="docs\user_guide\objects.inv" />
     <Compile Include="docs\user_guide\search.html" />
     <Compile Include="docs\user_guide\searchindex.js" />
-    <Compile Include="fonts\glyphicons-halflings-regular.eot" />
-    <Compile Include="fonts\glyphicons-halflings-regular.svg" />
-    <Compile Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Compile Include="fonts\glyphicons-halflings-regular.woff" />
     <Compile Include="framework\application\cache\.htaccess" />
     <Compile Include="framework\application\cache\index.html" />
     <Compile Include="framework\application\config\autoload.php" />
