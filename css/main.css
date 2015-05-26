@@ -1,8 +1,35 @@
+.rg-top-layer {
+    height: 850px;
+    background-color: #7CAECF;
+}
 
+.rg-odd-layer {
+    height: 500px;
+}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.rg-even-layer {
+    height: 500px;
+}
+
+.rg-bottom-layer {
+    padding-top: 15px;
+    height: 50px;
+    background-color: #333;
+    color: #9d9d9d;
+}
+
+.rg-bottom-link {
+    color: #9d9d9d;
+}
+
+.rg-bottom-link:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.rg-layer-title {
+    text-align: center;
+}
 
 
 

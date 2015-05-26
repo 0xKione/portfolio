@@ -24,7 +24,6 @@
         <style>
             body {
                 padding-top: 50px;
-                padding-bottom: 20px;
             }
         </style>
         <link rel="stylesheet" href="css/vendor/bootstrap/css/bootstrap-theme.css">
@@ -45,18 +44,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Project name</a>
+              <a class="navbar-brand" href="#"><?php echo $projectName; ?></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-              <form class="navbar-form navbar-right" role="form">
-                <div class="form-group">
-                  <input type="text" placeholder="Email" class="form-control">
-                </div>
-                <div class="form-group">
-                  <input type="password" placeholder="Password" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-              </form>
+                <ul class="nav navbar-nav">
+                    <li role="presentation" class="rg-nav-link"><a href="#projectSection">Projects</a></li>
+                    <li role="presentation" class="rg-nav-link"><a href="#demoSection">Demos</a></li>
+                    <li role="presentation" class="rg-nav-link"><a href="#designSection">Designs</a></li>
+                </ul>
             </div><!--/.navbar-collapse -->
           </div>
         </nav>

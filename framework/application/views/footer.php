@@ -6,9 +6,21 @@
  *  presenting footer view and closes body and html tags
  */
 ?>      
-        <footer>
-            <p>&copy; Richard Gomez 2015</p>
-        </footer>
+        <div class="rg-bottom-layer">
+            <div class="container">
+                <div class="col-md-4">
+                    <a class="col-md-2" href="https://www.linkedin.com/pub/richard-gomez/30/321/597"><img src="img/linkedin.png"/></a>
+                </div>
+                <div class="col-md-4">
+                    <a class="col-md-4 rg-bottom-link" href="#">About</a>
+                    <a class="col-md-4 rg-bottom-link" href="mailto:mail@richardwgomez.com?Subject=Website%20Inquiry">Contact Me</a>
+                </div>
+                <footer class="col-md-4">
+                    <p class="pull-right">&copy; Richard Gomez 2015</p>
+                </footer>
+            </div>
+        </div>
+        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.4/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery.js"><\/script>')</script>
 

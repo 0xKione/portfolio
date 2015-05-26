@@ -21,6 +21,7 @@ class Main extends RG_Controller
     {
         $data = array();
         $data['title'] = "My Website";
+        $data['projectName'] = "Richard Gomez";
         
         $this->loadViews(PageEnum::Main, $data);
         

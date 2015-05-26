@@ -234,7 +234,6 @@
     <Compile Include="framework\application\controllers\Main.php" />
     <Compile Include="framework\application\utils\BaseEnum.php" />
     <Compile Include="framework\application\core\RG_Controller.php" />
-    <Compile Include="framework\application\controllers\Welcome.php" />
     <Compile Include="framework\application\core\index.html" />
     <Compile Include="framework\application\helpers\index.html" />
     <Compile Include="framework\application\helpers\utility_helper.php" />
@@ -263,7 +262,6 @@
     <Compile Include="framework\application\views\header.php" />
     <Compile Include="framework\application\views\index.html" />
     <Compile Include="framework\application\views\main.php" />
-    <Compile Include="framework\application\views\welcome_message.php" />
     <Compile Include="framework\application\.htaccess" />
     <Compile Include="framework\application\index.html" />
     <Compile Include="framework\system\core\compat\hash.php" />

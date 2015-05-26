@@ -10,4 +10,10 @@ if (!function_exists('load_enumerators')) {
             include $filename;
         }
     }
+    
+    function print_string($id)
+    {
+        //
+        echo $id;
+    }
 }
