@@ -28,7 +28,7 @@ class RG_Controller extends CI_Controller
         $content = $prefix = "";
         
         switch($pageType) {
-            case PageEnum::Main:
+            case 0:
                 $content = "main";
                 $prefix = "";
                 break;

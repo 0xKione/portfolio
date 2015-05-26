@@ -10,10 +10,11 @@ if (!function_exists('load_enumerators')) {
             include $filename;
         }
     }
-    
+}
+
+if (!function_exists('print_string')) {
     function print_string($id)
     {
-        //
         echo $id;
     }
 }

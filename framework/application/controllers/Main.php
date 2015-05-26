@@ -23,7 +23,7 @@ class Main extends RG_Controller
         $data['title'] = "My Website";
         $data['projectName'] = "Richard Gomez";
         
-        $this->loadViews(PageEnum::Main, $data);
+        $this->loadViews(0, $data);
         
     }
 }
