@@ -20,7 +20,8 @@ class Main extends RG_Controller
     function index()
     {
         $data = array();
-        $data['title'] = "My Website";
+        $data['title'] = "Richard Gomez | My Website";
+        $data['description'] = "An ambitious self-starter, full-stack developer, and entrepreneur who is always looking for new challenges and experiences.";
         $data['projectName'] = "Richard Gomez";
         
         $this->loadViews(0, $data);

@@ -6,34 +6,41 @@
  *  presenting footer view and closes body and html tags
  */
 ?>      
-        <div class="rg-bottom-layer">
-            <div class="container">
-                <div class="col-md-4">
-                    <a class="col-md-2" href="https://www.linkedin.com/pub/richard-gomez/30/321/597"><img src="img/linkedin.png"/></a>
+        <div class="rg-footer col-md-12">
+            <div class="col-md-10 col-md-offset-1">
+                <ul class="rg-footer-nav unstyled-list">
+                    <li><a class="rg-footer-link" href="#">About</a></li>
+                    <li><a class="rg-footer-link" href="mailto:mail@richardwgomez.com?Subject=Website%20Inquiry">Contact Me</a></li>
+                </ul>
+                <hr />
+                <div class="container">
+                    <div style="display:block; font-size: 16px; margin-bottom: 20px;">
+                        <a class="col-xs-offset-0 col-xs-2 col-md-offset-1 col-md-2" href="https://www.linkedin.com/pub/richard-gomez/30/321/597"><img src="img/linkedin.png"/></a>
+                        <p class="rg-footer-copyright-text col-xs-offset-0 col-xs-10 col-sm-offset-6 col-sm-4 col-md-offset-4 col-md-3">2015 &copy; Richard Gomez</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <a class="col-md-4 rg-bottom-link" href="#">About</a>
-                    <a class="col-md-4 rg-bottom-link" href="mailto:mail@richardwgomez.com?Subject=Website%20Inquiry">Contact Me</a>
-                </div>
-                <footer class="col-md-4">
-                    <p class="pull-right">&copy; Richard Gomez 2015</p>
-                </footer>
             </div>
         </div>
         
+        <!-- Vendor Scripts -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.4/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery.js"><\/script>')</script>
-
         
         <script src="js/vendor/jquery-ui.js"></script>
         <script src="js/vendor/jquery.browser.js"></script>
         <script src="js/vendor/jquery.reveal.js"></script>
         <script src="js/vendor/bootstrap.js"></script>
-
         <script src="js/vendor/underscore.js"></script>
 
+        <!-- Page Scripts -->
         <script src="js/main.js"></script>
 
+        <script>
+            $(document).ready(function () {
+                App.init("<?php echo base_url(); ?>");
+            });
+        </script>
+        
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {

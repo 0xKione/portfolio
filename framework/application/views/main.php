@@ -10,7 +10,8 @@
         <div id="top" class="jumbotron rg-top-layer">
           <div class="container">
             <h1>Coming Soon</h1>
-            <p>Stay tuned! This site will be up and running shortly, but right now I'm working diligently to make that happen.</p>
+            <p>Stay tuned! This site will be up and running shortly, but in the meantime I am working on another project.</p>
+            <p>Check it out at <a href="http://www.wagekick.com">www.wagekick.com</a></p>
           </div>
         </div>
 
