@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     
     var vendorJsDestinationDir = '../js/vendor/';
     var vendorCssDestinationDir = '../css/vendor/';
-    var vendorFontDestinationDir = '../css/vendor/fonts/'
+    var vendorFontDestinationDir = '../css/fonts/'
 	var vendorBootstrapDestinationDir = '../css/vendor/bootstrap/'
 	
     var bowerRootDir = 'bower_components';
@@ -14,11 +14,15 @@ module.exports = function (grunt) {
         './jquery.browser/dist/jquery.browser.js',
         './jquery-reveal/jquery.reveal.js',
         './jquery-ui/jquery-ui.js',
-        './underscore/underscore.js'
+        './underscore/underscore.js',
+        './jigl/dist/jigl.js'
     ];
     var bowerCssComponents = [
+        './font-awesome/css/font-awesome.css',
+        './jigl/dist/jigl.css'
     ];
     var bowerFontComponents = [
+        './font-awesome/fonts/*',
     ];
     
     // Define new tasks
@@ -31,7 +35,7 @@ module.exports = function (grunt) {
                     dest: vendorJsDestinationDir,
                     flatten: true,
                     expand: true
-                }, /*{
+                }, {
                     cwd: bowerRootDir,
                     src: bowerCssComponents,
                     dest: vendorCssDestinationDir,
@@ -43,7 +47,7 @@ module.exports = function (grunt) {
                     dest: vendorFontDestinationDir,
                     flatten: true,
                     expand: true
-                }, */
+                },
 				// Bootstrap specific logic
 				{
 					cwd: bowerRootDir,

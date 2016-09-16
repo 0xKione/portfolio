@@ -28,15 +28,21 @@
                 padding-top: 50px;
             }
         </style>
-        <link rel="stylesheet" href="css/vendor/bootstrap/css/bootstrap-theme.css">
-        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="css/vendor/font-awesome.css" />
+        <link rel="stylesheet" href="css/vendor/bootstrap/css/bootstrap-theme.css" />
+        <link rel="stylesheet" href="css/vendor/jigl.css" />
+        <link rel="stylesheet" href="css/jiglPage.css" />
+        <link rel="stylesheet" href="css/main.css" />
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class
+            ="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <?php if ($pageType == 0) { ?>
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -57,3 +63,4 @@
             </div><!--/.navbar-collapse -->
           </div>
         </nav>
+        <?php } ?>

@@ -23,20 +23,22 @@
         </div>
         
         <!-- Vendor Scripts -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.4/jquery.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery.js"><\/script>')</script>
         
         <script src="js/vendor/jquery-ui.js"></script>
         <script src="js/vendor/jquery.browser.js"></script>
         <script src="js/vendor/jquery.reveal.js"></script>
         <script src="js/vendor/bootstrap.js"></script>
+        <script src="js/vendor/jigl.js"></script>
         <script src="js/vendor/underscore.js"></script>
 
         <!-- Page Scripts -->
         <script src="js/main.js"></script>
 
         <script>
-            $(document).ready(function () {
+            $(document).ready(function() {
+                Jigl.init();
                 App.init("<?php echo base_url(); ?>");
             });
         </script>

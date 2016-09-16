@@ -261,6 +261,7 @@
     <Compile Include="framework\application\views\footer.php" />
     <Compile Include="framework\application\views\header.php" />
     <Compile Include="framework\application\views\index.html" />
+    <Compile Include="framework\application\views\jigl.php" />
     <Compile Include="framework\application\views\main.php" />
     <Compile Include="framework\application\.htaccess" />
     <Compile Include="framework\application\index.html" />
@@ -552,5 +553,8 @@
     <Folder Include="img" />
     <Folder Include="js\vendor" />
     <Folder Include="js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\jiglPage.css" />
   </ItemGroup>
 </Project>

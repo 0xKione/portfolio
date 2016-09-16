@@ -30,7 +30,9 @@ class RG_Controller extends CI_Controller
         switch($pageType) {
             case 0:
                 $content = "main";
-                $prefix = "";
+                break;
+            case 1:
+                $content = "jigl";
                 break;
             default:
                 break;
