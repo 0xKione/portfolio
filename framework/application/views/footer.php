@@ -6,6 +6,7 @@
  *  presenting footer view and closes body and html tags
  */
 ?>      
+        <?php if ($pageType == 0) { ?>
         <div class="rg-footer col-md-12">
             <div class="col-md-10 col-md-offset-1">
                 <ul class="rg-footer-nav unstyled-list">
@@ -21,6 +22,7 @@
                 </div>
             </div>
         </div>
+        <?php } ?>
         
         <!-- Vendor Scripts -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
