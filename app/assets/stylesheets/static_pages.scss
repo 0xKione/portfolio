@@ -1,3 +1,392 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* JIGL Usage */
+.jigl-usage {
+  position: relative;
+
+  /* Overrides */
+  .jigl {
+    text-align: left;
+  }
+
+  // .jigl-1,
+  // .jigl-2,
+  // .jigl-3,
+  // .jigl-4,
+  // .jigl-5,
+  // .jigl-6 {
+  //     width: 99%;
+  //     float: none;
+  // }
+
+  // @media (min-width: 599px) {
+  //   .jigl-1 {
+  //     width: (99 / 1) * 1%;
+  //   }
+
+  //   .jigl-2 {
+  //     width: (99 / 2) * 1%;
+  //     float: left;
+  //   }
+
+  //   .jigl-3 {
+  //     width: (99 / 3) * 1%;
+  //     float: left;
+  //   }
+
+  //   .jigl-4 {
+  //     width: (99 / 4) * 1%;
+  //     float: left;
+  //   }
+
+  //   .jigl-5 {
+  //     width: (99 / 5) * 1%;
+  //     float: left;
+  //   }
+
+  //   .jigl-6 {
+  //     width: (99 / 6) * 1%;
+  //     float: left;
+  //   }
+  // }
+
+  /* Page Styles */
+  a {
+    &:hover {
+      color: #479;
+    }
+
+    text-decoration: none;
+    color: #69B;
+    cursor: pointer;
+  }
+
+  .jigl-navbar {
+    width: 100%;
+    float: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    overflow-y: auto;
+    border-bottom: 2px solid #666;
+    box-shadow: #666 0px 2px;
+    position: fixed;
+    top: 50px;
+    background-color: #FFF;
+    z-index: 1000;
+
+    .jigl-navbar-container {
+      max-height: 150px;
+    }
+
+    .jigl-navbar-section-name {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .jigl-navbar-sections {
+      padding-left: 10px;
+    }
+
+    .jigl-navbar-subsections {
+      padding-left: 15px;
+
+      > li {
+        margin-bottom: 5px;
+        font-size: 11px;
+
+        &:last-of-type {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .jigl-content {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    overflow: hidden;
+
+    .jigl-content-container {
+      display: none;
+    
+      h1 {
+        padding-top: 15px;
+        margin-bottom: 5px;
+        font-size: 2em;
+      }
+
+      .jigl-content-description {
+        font-size: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .jigl:last-of-type {
+        margin-bottom: 10px;
+      }
+
+      code.jigl-content-code {
+        background-color: #FFF;
+        color: #469;
+
+        > div {
+          background-color: #EEE;
+          text-align: left;
+          padding: 0 5px;
+          font-size: 8px;
+
+          &:first-of-type {
+            padding-top: 5px;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px;
+          }
+
+          &:last-of-type {
+            padding-bottom: 5px;
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+          }
+        }
+
+        .code-header {
+          font-size: 12px;
+        }
+
+        .code-subheader {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 599px) {
+    .jigl-navbar {
+      width: 30%;
+      float: left;
+      border-bottom: 0;
+      border-right: 2px solid #666;
+      box-shadow: #666 2px 0px;
+      padding: 5px 15px;
+      position: relative;
+      top: 0;
+
+      .jigl-navbar-container {
+        max-height: unset;
+      }
+
+      .jigl-navbar-section-name {
+        margin-bottom: 5px;
+      }
+
+      .jigl-navbar-sections {
+        padding-left: 10px;
+      }
+
+      .jigl-navbar-subsections {
+        padding-left: 15px;
+
+        > li {
+          margin-bottom: 5px;
+
+          &:last-of-type {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .jigl-content {
+      width: 70%;
+      padding: 5px 10px;
+      margin-top: 0;
+      border-left: 2px solid #666;
+      box-shadow: #666 -2px 0px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .jigl-navbar {
+      padding: 10px 30px;
+
+      .jigl-navbar-section-name {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      .jigl-navbar-sections {
+        padding-left: 10px;
+      }
+
+      .jigl-navbar-subsections {
+        padding-left: 15px;
+
+        > li {
+          margin-bottom: 5px;
+          font-size: 16px;
+
+          &:last-of-type {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .jigl-content {
+      padding: 10px 20px;
+
+      .jigl-content-container {
+        h1 {
+          padding-top: 0;
+          margin-bottom: 10px;
+        }
+
+        .jigl-content-description {
+          font-size: 14px;
+          margin-bottom: 40px;
+        }
+
+        .jigl:last-of-type {
+          margin-bottom: 25px;
+        }
+
+        code.jigl-content-code {
+          > div {
+            font-size: 12px;
+            padding: 0 15px;
+
+            &:first-of-type {
+              padding-top: 15px;
+            }
+
+            &:last-of-type {
+              padding-bottom: 15px;
+            }
+          }
+
+          .code-header {
+            font-size: 16px;
+          }
+
+          .code-subheader {
+            font-size: 14px;
+          }
+        }
+
+        code.jigl-api-code {
+          > div {
+            width: 493px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+
+  }
+
+  @media (min-width: 1200px) {
+
+  }
+
+  .demo-header {
+    > div {
+      font-size: 20px;
+    }
+  }
+
+  .demo-navigation {
+    > ul {
+      > li {
+        > a {
+          font-size: 18px;
+        }
+      }
+      
+      list-style: none;
+    }
+
+    margin-bottom: 40px;
+  }
+
+  .demo-sections {
+    padding: 10px;
+  }
+
+  .demo-section {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    margin-bottom: 15px;
+  }
+
+  .demo-section-header {
+    font-size: 17px;
+    margin-left: 10px;
+  }
+
+  .demo-section-navigation {
+    > ul {
+      > li {
+        > a {
+          &:hover {
+            color: #444;
+          }
+
+          text-decoration: none;
+          color: #69B;
+          font-size: 18px;
+        }
+      }
+      
+      list-style: none;
+    }
+
+    margin-left: 5%;
+  }
+
+  .demo-containers {
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  .demo-container {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    > div {
+      margin-bottom: 10px;
+    }
+
+    > code {
+      > div {
+        &:first-of-type {
+          padding-top: 10px;
+        }
+
+        &:last-of-type {
+          padding-bottom: 10px;
+        }
+
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #EEE;
+      }
+
+      background: #EEE;
+      color: #469;
+    }
+
+    margin-bottom: 15px;
+  }
+}

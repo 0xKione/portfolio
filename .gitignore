@@ -8,4 +8,7 @@
 
 /*.user
 
-/*.suo
+/*.suo/public/packs
+/node_modules
+
+/tmp/cache/

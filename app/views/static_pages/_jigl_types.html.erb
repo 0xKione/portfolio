@@ -1,0 +1,224 @@
+<div id="textInput" class="jigl-content-container">
+	<h1>Text</h1>
+	<div class="jigl-content-description">
+		A basic text field that checks for any input the user types in at all. It supports 
+		all JIGL options. The class <b>jigl-text</b> can be omitted for the same result.
+	</div>
+	<div class="jigl jigl-text" tabindex="1">
+		<div class="jigl-label">Input Name</div>
+		<div class="jigl-info">Required</div>
+		<div class="jigl-container">
+			<input class="jigl-field" type="text" name="inputName" />
+		</div>
+	</div>
+	<code class="jigl-content-code">
+		<div>&lt;div class='jigl jigl-text' tabindex='1'&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input Name&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-info'&gt;Required&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class='jigl-field' type='text' name='inputName' /&gt;</div>
+		<div>&nbsp;&nbsp;&lt;/div&gt;</div>
+		<div>&lt;/div&gt;</div>
+	</code>
+</div>
+
+<div id="emailInput" class="jigl-content-container">
+	<h1>Email</h1>
+	<div class="jigl-content-description">
+		A text field that supports and validates email input for a form. It supports all JIGL options, 
+		but not recommended to use the <b>jigl-no-valid</b> option. A hint can be provided to the 
+		user using the <b>jigl-hint</b> element to help clue them in to a correctly formed email address.
+	</div>
+	<div class="jigl jigl-email" tabindex="1">
+		<div class="jigl-label">Email</div>
+		<div class="jigl-info">Required</div>
+		<div class="jigl-hint">
+			<span>A valid email address is required. Ex: name@domain.com</span>
+		</div>
+		<div class="jigl-container">
+			<input class="jigl-field" type="text" name="email"/>
+		</div>
+	</div>
+	<code class="jigl-content-code">
+		<div>&lt;div class='jigl jigl-email' tabindex='1'&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input Name&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-info'&gt;Required&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-hint'&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;A valid email address is required. Ex: name@domain.com&lt;/span&gt;</div>
+		<div>&nbsp;&nbsp;&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class='jigl-field' type='text' name='email' /&gt;</div>
+		<div>&nbsp;&nbsp;&lt;/div&gt;</div>
+		<div>&lt;/div&gt;</div>
+	</code>
+</div>
+
+<div id="passwordInput" class="jigl-content-container">
+	<h1>Password</h1>
+	<div class="jigl-content-description">
+		A text field that supports and validates email input for a form. It supports all JIGL options, 
+		but not recommended to use the <b>jigl-no-valid</b> option. A hint can be provided to the 
+		user using the <b>jigl-hint</b> element to help clue them in to a correct password. Currently 
+		the accepted format requires at least 7 characters, one digit, one uppercase letter, and one 
+		lowercase letter. Support for customized password requirements coming soon.
+	</div>
+	<div class="jigl jigl-password" tabindex="1">
+		<div class="jigl-label">Password</div>
+		<div class="jigl-info">Required</div>
+		<div class="jigl-hint">
+			<span>Passwords must be at least 7 characters, have one digit, one lowercase letter, and one uppercase letter</span>
+		</div>
+		<div class="jigl-container">
+			<input class="jigl-field" type="password" name="password"/>
+		</div>
+	</div>
+	<code class="jigl-content-code">
+		<div>&lt;div class='jigl jigl-password' tabindex='1'&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input Name&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-info'&gt;Required&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-hint'&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Passwords must be at least 7 characters, have one digit, one lowercase letter, and one uppercase letter&lt;/span&gt;</div>
+		<div>&nbsp;&nbsp;&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class='jigl-field' type='password' name='password' /&gt;</div>
+		<div>&nbsp;&nbsp;&lt;/div&gt;</div>
+		<div>&lt;/div&gt;</div>
+	</code>
+</div>
+
+<div id="textAreaInput" class="jigl-content-container">
+	<h1>Text Area</h1>
+	<div class="jigl-content-description">
+		A basic textarea that can be used to allow a user a long form input and will validate 
+		as long as any input is entered. It supports all JIGL options. Support for min length 
+		requirements are coming soon.
+	</div>
+	<div class="jigl jigl-textarea" tabindex="1">
+		<div class="jigl-label">Input Name</div>
+		<div class="jigl-info">Required</div>
+		<div class="jigl-container">
+			<textarea class="jigl-field" name="inputName"></textarea>
+		</div>
+	</div>
+	<code class="jigl-content-code">
+		<div>&lt;div class='jigl jigl-textarea' tabindex='1'&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input Name&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-info'&gt;Required&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea class='jigl-field' name='inputName'&gt;&lt;/textarea&gt;</div>
+		<div>&nbsp;&nbsp;&lt;/div&gt;</div>
+		<div>&lt;/div&gt;</div>
+	</code>
+</div>
+
+<div id="selectInput" class="jigl-content-container">
+	<h1>Select</h1>
+	<div class="jigl-content-description">
+		A basic select input that allows the user to provide options that can be navigated/selected
+		using a mouse(touch) or keyboard. It supports all JIGL options.
+	</div>
+	<div class="jigl jigl-select" tabindex="0">
+		<div class="jigl-label">Input Name</div>
+		<div class="jigl-info">Required</div>
+		<div class="jigl-container">
+			<span class="jigl-dropdown-arrow">
+				<i class="fa fa-caret-down"></i>
+			</span>
+			<input name="inputName" />
+			<div class="jigl-field">
+				<div></div>
+				<span>...</span>
+			</div>
+			<div class="jigl-select-dropdown">
+				<ul>
+					<li class="jigl-option jigl-option-empty" data-value="0"></li>
+					<li class="jigl-option" data-value="1">Value1</li>
+					<li class="jigl-option" data-value="2">Value2</li>
+					<li class="jigl-option" data-value="3">Thing1</li>
+					<li class="jigl-option" data-value="4">Thing2</li>
+					<li class="jigl-option" data-value="5">About1</li>
+					<li class="jigl-option" data-value="6">Stuff1</li>
+					<li class="jigl-option" data-value="7">Stuff2</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<code class="jigl-content-code">
+		<div>&lt;div class='jigl jigl-select' tabindex='0'&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input Name&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-info'&gt;Required&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class='jigl-dropdown-arrow'&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class='fa fa-caret-down'&gt;&lt;/i&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name='inputName' /&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class='jigl-field'&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;...&lt;/span&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class='jigl-select-dropdown'&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option jigl-option-empty' data-value='0'&gt;&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='1'&gt;Value 1&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='2'&gt;Value 2&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='3'&gt;Value 3&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='4'&gt;Value 4&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;/div&gt;</div>
+		<div>&lt;/div&gt;</div>
+	</code>
+</div>
+
+<div id="autocompleteInput" class="jigl-content-container">
+	<h1>Autocomplete</h1>
+	<div class="jigl-content-description">
+		A more advanced select input that allows the user to provide options that can be navigated/selected
+		using a mouse(touch) or keyboard and also searched based on what is typed into the input. It is validated
+		by having an option selected. It supports all JIGL options.
+	</div>
+	<div class="jigl jigl-autocomplete" tabindex="1">
+		<div class="jigl-label">Input Name</div>
+		<div class="jigl-info">Required</div>
+		<div class="jigl-container">
+			<input class="jigl-field" type="text" name="inputName" />
+			<div class="jigl-autocomplete-dropdown">
+				<ul>
+					<li class="jigl-option" data-value="1">Apple</li>
+					<li class="jigl-option" data-value="2">Apples</li>
+					<li class="jigl-option" data-value="3">Ball</li>
+					<li class="jigl-option" data-value="4">Boston</li>
+					<li class="jigl-option" data-value="5">Cat</li>
+					<li class="jigl-option" data-value="6">Dodge</li>
+					<li class="jigl-option" data-value="7">Dog</li>
+					<li class="jigl-option" data-value="8">Elephant</li>
+					<li class="jigl-option" data-value="9">Football</li>
+					<li class="jigl-option" data-value="10">Fruit</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<code class="jigl-content-code">
+		<div>&lt;div class='jigl jigl-autocomplete' tabindex='1'&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input Name&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-info'&gt;Required&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class='jigl-field' type='text' name='inputName' /&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class='jigl-autocomplete-dropdown'&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='1'&gt;Apple&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='2'&gt;Apples&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='3'&gt;Ball&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='4'&gt;Boston&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='5'&gt;Cat&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='6'&gt;Dodge&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='7'&gt;Dog&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='8'&gt;Elephant&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='9'&gt;Football&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class='jigl-option' data-value='10'&gt;Fruit&lt/li&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;</div>
+		<div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</div>
+		<div>&nbsp;&nbsp;&lt;/div&gt;</div>
+		<div>&lt;/div&gt;</div>
+	</code>
+</div>

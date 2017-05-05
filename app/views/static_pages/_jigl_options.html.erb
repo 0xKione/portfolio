@@ -1,0 +1,171 @@
+<div id="nonValidatedInput" class="jigl-content-container">
+  <h1>Non-validating Inputs</h1>
+  <div class="jigl-content-description">
+    Validation can be turned off on an input by adding the class <b>jigl-no-valid</b> to the root element.
+    This can be very useful when creating a form where not everything is required and allow the user the
+    option to supply the information or not. This JIGL option can be used with any other JIGL options, but
+    it won't make a difference when using the minified input option or the disabled option.
+  </div>
+  <div class="jigl jigl-text jigl-no-valid" tabindex="1">
+    <div class="jigl-label">Input Name</div>
+    <div class="jigl-container">
+      <input class="jigl-field" type="text" name="inputName"/>
+    </div>
+  </div>
+  <code class="jigl-content-code">
+    <div>&lt;div class='jigl jigl-text jigl-no-valid' tabindex='1'&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input Name&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class='jigl-field' type='text' name='inputName' /&gt;</div>
+    <div>&nbsp;&nbsp;&lt;/div&gt;</div>
+    <div>&lt;/div&gt;</div>
+  </code>
+</div>
+
+<div id="miniValidInput" class="jigl-content-container">
+  <h1>Minified Validation</h1>
+  <div class="jigl-content-description">
+    Instead of using words to describe the state of the input, symbols can be used instead. This
+    is especially useful when creating rows containing 4-6 inputs or inputs with long names to prevent
+    the validation message from overwriting the field name. Adding the class <b>info-minify</b> to the 
+    <b>jigl-info</b> element will kickstart the validation to change to the required symbols, but initially
+    the "Required" text needs to be replaces with <i>&lt;i class="fa fa-exclamation"&gt;&lt;/i&gt;</i>.
+    It requires a little more effort on the developers part to create one, but represents state in a very simple way.
+    This JIGL option works with any other JIGL option, but won't make a difference when used with the disabled input
+    option or the no validation option.
+  </div>
+  <div style="overflow: hidden;">
+    <div class="jigl jigl-4 jigl-text jigl-left" tabindex="1">
+      <div class="jigl-label">Input1</div>
+      <div class="jigl-info info-minify"><i class="fa fa-exclamation"></i></div>
+      <div class="jigl-container">
+        <input class="jigl-field" type="text" name="input1"/>
+      </div>
+    </div>
+    <div class="jigl jigl-4 jigl-text jigl-center" tabindex="1">
+      <div class="jigl-label">Input2</div>
+      <div class="jigl-info info-minify"><i class="fa fa-exclamation"></i></div>
+      <div class="jigl-container">
+        <input class="jigl-field" type="text" name="input2"/>
+      </div>
+    </div>
+    <div class="jigl jigl-4 jigl-text jigl-center" tabindex="1">
+      <div class="jigl-label">Input3</div>
+      <div class="jigl-info info-minify"><i class="fa fa-exclamation"></i></div>
+      <div class="jigl-container">
+        <input class="jigl-field" type="text" name="input3"/>
+      </div>
+    </div>
+    <div class="jigl jigl-4 jigl-text jigl-right" tabindex="1">
+      <div class="jigl-label">Input4</div>
+      <div class="jigl-info info-minify"><i class="fa fa-exclamation"></i></div>
+      <div class="jigl-container">
+        <input class="jigl-field" type="text" name="input4"/>
+      </div>
+    </div>
+  </div>
+  <code class="jigl-content-code">
+    <div>&lt;div class='jigl jigl-4 jigl-text jigl-left' tabindex='1'&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input1&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-info info-minify'&gt;&lt;i class='fa fa-exclamation'&gt;&lt;/i&gt;&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class='jigl-field' type='text' name='input1' /&gt;</div>
+    <div>&nbsp;&nbsp;&lt;/div&gt;</div>
+    <div>&lt;/div&gt;</div>
+    <div>&lt;div class='jigl jigl-4 jigl-text jigl-center' tabindex='1'&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input2&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-info info-minify'&gt;&lt;i class='fa fa-exclamation'&gt;&lt;/i&gt;&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class='jigl-field' type='text' name='input2' /&gt;</div>
+    <div>&nbsp;&nbsp;&lt;/div&gt;</div>
+    <div>&lt;/div&gt;</div>
+    <div>&lt;div class='jigl jigl-4 jigl-text jigl-center' tabindex='1'&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input3&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-info info-minify'&gt;&lt;i class='fa fa-exclamation'&gt;&lt;/i&gt;&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class='jigl-field' type='text' name='input3' /&gt;</div>
+    <div>&nbsp;&nbsp;&lt;/div&gt;</div>
+    <div>&lt;/div&gt;</div>
+    <div>&lt;div class='jigl jigl-4 jigl-text jigl-right' tabindex='1'&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input4&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-info info-minify'&gt;&lt;i class='fa fa-exclamation'&gt;&lt;/i&gt;&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class='jigl-field' type='text' name='input4' /&gt;</div>
+    <div>&nbsp;&nbsp;&lt;/div&gt;</div>
+    <div>&lt;/div&gt;</div>
+  </code>
+</div>
+
+<div id="disabledInput" class="jigl-content-container">
+  <h1>Disabled Inputs</h1>
+  <div class="jigl-content-description">
+    Inputs can be disabled to allow a read-only field for an end user. This can be useful when showing off a profile or something
+    along those lines where you would like the data to be displayed, but not altered. To use it add <b>jigl-disabled</b> to the 
+    root tag of the input. This JIGL option works with any other JIGL option, but won't make a difference when used with the minified
+    validation option or the no validation option.
+  </div>
+  <div class="jigl jigl-text jigl-disabled" tabindex="1">
+    <div class="jigl-label">Input Name</div>
+    <div class="jigl-container">
+      <input class="jigl-field" type="text" name="inputName" value="Read-only Text" />
+    </div>
+  </div>
+  <code class="jigl-content-code">
+    <div>&lt;div class='jigl jigl-text jigl-disabled' tabindex='1'&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input Name&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class='jigl-field' type='text' name='inputName' value='Read-only Text' /&gt;</div>
+    <div>&nbsp;&nbsp;&lt;/div&gt;</div>
+    <div>&lt;/div&gt;</div>
+  </code>
+</div>
+
+<div id="roundedInput" class="jigl-content-container">
+  <h1>Rounded Inputs</h1>
+  <div class="jigl-content-description">
+    Most sites these days don't use sharp edges, but rather slightly rounded corners. Eventually this will take over as the
+    default style of the inputs, but for now they can be designated for each individual input. To utilize this option just add
+    the class <b>jigl-rounded</b> to the root element tag. This JIGL option works with any other JIGL options.
+  </div>
+  <div class="jigl jigl-text jigl-rounded" tabindex="1">
+    <div class="jigl-label">Input Name</div>
+    <div class="jigl-info">Required</div>
+    <div class="jigl-container">
+      <input class="jigl-field" type="text" name="inputName" />
+    </div>
+  </div>
+  <code class="jigl-content-code">
+    <div>&lt;div class='jigl jigl-text jigl-rounded' tabindex='1'&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input Name&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-info'&gt;Required&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class='jigl-field' type='text' name='inputName' /&gt;</div>
+    <div>&nbsp;&nbsp;&lt;/div&gt;</div>
+    <div>&lt;/div&gt;</div>
+  </code>
+</div>
+
+<div id="darkInput" class="jigl-content-container">
+  <h1>Dark Themed Inputs</h1>
+  <div class="jigl-content-description">
+    Some designers prefer their sites have a darker theme to them over a lighter theme. This option allows the user to invert
+    any input into a dark background and light text. To use this just add the <b>jigl-dark</b> class to the root element tag.
+    This JIGL option works with any other JIGL options.
+  </div>
+  <div class="jigl jigl-text jigl-dark" tabindex="1">
+    <div class="jigl-label">Input Name</div>
+    <div class="jigl-info">Required</div>
+    <div class="jigl-container">
+      <input class="jigl-field" type="text" name="inputName" />
+    </div>
+  </div>
+  <code class="jigl-content-code">
+    <div>&lt;div class='jigl jigl-text jigl-dark' tabindex='1'&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-label'&gt;Input Name&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-info'&gt;Required&lt;/div&gt;</div>
+    <div>&nbsp;&nbsp;&lt;div class='jigl-container'&gt;</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class='jigl-field' type='text' name='inputName' /&gt;</div>
+    <div>&nbsp;&nbsp;&lt;/div&gt;</div>
+    <div>&lt;/div&gt;</div>
+  </code>
+</div>

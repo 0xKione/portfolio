@@ -1,0 +1,289 @@
+<div id="init" class="jigl-content-container">
+  <h1>init()</h1>
+  <div class="jigl-content-description">
+    This function initialized the entire JIGL library, must be called to render all 
+    inputs properly and set up events after the $(document).ready() function.
+  </div>
+  <div style="display: table; margin: auto;">
+    <code class="jigl-content-code jigl-api-code">
+      <div>/*</div>
+      <div> * Jigl.init()</div>
+      <div> *</div>
+      <div> * Input Parameters:</div>
+      <div> * <strong>None</strong></div>
+      <div> *</div>
+      <div> * Output:</div>
+      <div> * <strong>None</strong></div>
+      <div> *</div>
+      <div> */</div>
+      <div>&nbsp;</div>
+      <div><strong>Usage:</strong></div>
+      <div>$(document).ready(function() {</div>
+      <div>&nbsp;&nbsp;Jigl.init();</div>
+      <div>}</div>
+    </code>
+  </div>
+</div>
+
+<div id="initializeContainer" class="jigl-content-container">
+  <h1>initializeContainer()</h1>
+  <div class="jigl-content-description">
+    This function takes in a selector of a container or the parent of a group of containers 
+    that have not been initialized and sets up events and styles based on their properties. This
+    function is useful when dynamically creating more inputs.
+  </div>
+  <div style="display: table; margin: auto;">
+    <code class="jigl-content-code jigl-api-code">
+      <div>/*</div>
+      <div> * Jigl.initializeContainer(containerTag)</div>
+      <div> *</div>
+      <div> * Input Parameters:</div>
+      <div> * <b>containerTag</b> - A jQuery selector representing the root of the</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; input (or parent containing inputs) to</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; initialize</div>
+      <div> *</div>
+      <div> * Output:</div>
+      <div> * <strong>None</strong></div>
+      <div> *</div>
+      <div> */</div>
+      <div>&nbsp;</div>
+      <div><strong>Usage:</strong></div>
+      <div>Jigl.initializeContainer($('.jigl'));</div>
+    </code>
+  </div>
+</div>
+
+<div id="validateContainer" class="jigl-content-container">
+  <h1>validateContainer()</h1>
+  <div class="jigl-content-description">
+    This function takes in a selector of a container or the parent of a group of containers that need to 
+    be tested for validation, and runs the validation function on the container or it's children. This is
+    a useful function to use when validating a form before submittal.
+  </div>
+  <div style="display: table; margin: auto;">
+    <code class="jigl-content-code jigl-api-code">
+      <div>/*</div>
+      <div> * Jigl.validateContainer(containerTag)</div>
+      <div> *</div>
+      <div> * Input Parameters:</div>
+      <div> * <strong>containerTag</strong> - A jQuery selector representing the root of the</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; input (or parent containing inputs) to</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; trigger validation</div>
+      <div> * <strong>markContainers</strong> - A boolean indicating whether or not you want</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the containers to be marked invalid or not</div>
+      <div> *</div>
+      <div> * Output:</div>
+      <div> * <strong>None</strong></div>
+      <div> *</div>
+      <div> */</div>
+      <div>&nbsp;</div>
+      <div><strong>Usage:</strong></div>
+      <div>Jigl.validateContainer($('.jigl'));</div>
+    </code>
+  </div>
+</div>
+
+<div id="isContainerValid" class="jigl-content-container">
+  <h1>isContainerValid()</h1>
+  <div class="jigl-content-description">
+    This function takes in a selector of a container or the parent of a group of containers and 
+    returns whether or not it or any of it's children are valid or not.
+  </div>
+  <div style="display: table; margin: auto;">
+    <code class="jigl-content-code jigl-api-code">
+      <div>/*</div>
+      <div> * Jigl.isContainerValid(containerTag)</div>
+      <div> *</div>
+      <div> * Input Parameters:</div>
+      <div> * <b>containerTag</b> - A jQuery selector representing the root of the</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; input (or parent containing inputs) to</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; test validation</div>
+      <div> *</div>
+      <div> * Output:</div>
+      <div> * <b>isValid</b> - A value indicating if any invalid inputs are in</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; containerTag</div>
+      <div> *</div>
+      <div> */</div>
+      <div>&nbsp;</div>
+      <div><b>Usage:</b></div>
+      <div>Jigl.isContainerValid($('.jigl'));</div>
+    </code>
+  </div>
+</div>
+
+<div id="createClone" class="jigl-content-container">
+  <h1>createClone()</h1>
+  <div class="jigl-content-description">
+    This function takes in a selector of a container or the parent of a group of containers and 
+    returns an exact HTML clone of it with options to wire up events or not.
+  </div>
+  <div style="display: table; margin: auto;">
+    <code class="jigl-content-code jigl-api-code">
+      <div>/*</div>
+      <div> * Jigl.createClone(originalContainerTag, copyDataAndEvents,</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; copyChildDataAndEvents)</div>
+      <div> *</div>
+      <div> * Input Parameters:</div>
+      <div> * <b>originalContainerTag</b> - A jQuery selector representing the root</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of the input (or parent containing</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inputs) to be cloned</div>
+      <div> * <b>copyDataAndEvents</b> - A boolean value indicating whether or not</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; to copy the data and events of the</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; container</div>
+      <div> * <b>copyChildDataAndEvents</b> - A boolean value indicating whether or</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; not to copy the data and events of</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; all the children in the container</div>
+      <div> *</div>
+      <div> * Output:</div>
+      <div> * <b>newContainerTag</b> - HTML representing the new clone that was</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; created</div>
+      <div> */</div>
+      <div>&nbsp;</div>
+      <div><b>Usage:</b></div>
+      <div>Jigl.createClone($('.jigl'), true, false);</div>
+    </code>
+  </div>
+</div>
+
+<div id="resetContainer" class="jigl-content-container">
+  <h1>resetContainer()</h1>
+  <div class="jigl-content-description">
+    This function takes in a selector of a container or the parent of a group of containers 
+    and resets all values in the containers.
+  </div>
+  <div style="display: table; margin: auto;">
+    <code class="jigl-content-code jigl-api-code">
+      <div>/*</div>
+      <div> * Jigl.resetContainer(containerTag)</div>
+      <div> *</div>
+      <div> * Input Parameters:</div>
+      <div> * <b>containerTag</b> - A jQuery selector representing the root of the</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; input (or parent containing inputs) to reset</div>
+      <div> *</div>
+      <div> * Output:</div>
+      <div> * <b>None</b></div>
+      <div> */</div>
+      <div>&nbsp;</div>
+      <div><b>Usage:</b></div>
+      <div>Jigl.resetContainer($('.jigl'));</div>
+    </code>
+  </div>
+</div>
+
+<div id="setUpSelectOptions" class="jigl-content-container">
+  <h1>setUpSelectOptions()</h1>
+  <div class="jigl-content-description">
+    This function takes in a selector of the root tag of a select input and sets up all the
+    option events. It takes an optional parameter to only apply it to the last option to support
+    dynamically adding options on the fly. 
+  </div>
+  <div style="display: table; margin: auto;">
+    <code class="jigl-content-code jigl-api-code">
+      <div>/*</div>
+      <div> * Jigl.setUpSelectOptions(parentTagSelector, onlyLast)</div>
+      <div> * </div>
+      <div> * Input Parameters:</div>
+      <div> * <b>parentTagSelector</b> - A jQuery selector representing the root</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of the select input to set up events</div>
+      <div> * <b>onlyLast</b> - A boolean value indicating if only the last</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; options events should be wired up</div>
+      <div> * </div>
+      <div> * Output:</div>
+      <div> * <b>None</b></div>
+      <div> */ </div>
+      <div>&nbsp;</div>
+      <div><b>Usage:</b></div>
+      <div>Jigl.setUpSelectOptions($('.jigl-select'), true);</div>
+    </code>
+  </div>
+</div>
+
+<div id="jQueryData" class="jigl-content-container">
+  <h1>$(...).data() Functions</h1>
+  <div class="jigl-content-description">
+    This library utilizes the .data() function supplied by jQuery to allow the user to extract and
+    manipulate the value of the input and the text shown by the input.
+  </div>
+  <div style="display: table; margin: auto;">
+    <code class="jigl-content-code jigl-api-code">
+      <div class="code-header"><b>$(...).data().val()</b></div>
+      <div>&nbsp;</div>
+      <div class="code-subheader"><b>GETTER</b></div>
+      <div>/*</div>
+      <div> * $(...).data().val()</div>
+      <div> *</div>
+      <div> * This function will get the value of the actual HTML input tag</div>
+      <div> * for the JIGL input, when using the 'select' or 'autocomplete'</div>
+      <div> * inputs this will be the id value</div>
+      <div> *</div>
+      <div> * Input Parameters:</div>
+      <div> * <b>None</b></div>
+      <div> *</div>
+      <div> * Output:</div>
+      <div> * <b>val</b> - The value of the HTML input that lies underneath the</div> 
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JIGL input</div>
+      <div> */</div>
+      <div>&nbsp;</div>
+      <div><b>Usage:</b></div>
+      <div>$('.jigl').data().val();</div>
+      <div>&nbsp;</div>
+      <div class="code-subheader"><b>SETTER</b></div>
+      <div>/*</div>
+      <div> * $(...).data().val(newValue)</div>
+      <div> *</div>
+      <div> * This function will set the value of the HTML input tag and the</div>
+      <div> * JIGL input, when using the 'select' or 'autocomplete' inputs</div>
+      <div> * this will affect the id value</div>
+      <div> *</div>
+      <div> * Input Parameters:</div>
+      <div> * <b>newValue</b> - The new value to set the input to</div>
+      <div> *</div>
+      <div> * Output:</div>
+      <div> * <b>None</b></div>
+      <div> */</div>
+      <div>&nbsp;</div>
+      <div><b>Usage:</b></div>
+      <div>$('.jigl').data().val(5);</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div class="code-header"><b>$(...).data().text()</b></div>
+      <div>&nbsp;</div>
+      <div class="code-subheader"><b>GETTER</b></div>
+      <div>/*</div>
+      <div> * $(...).data().text()</div>
+      <div> *</div>
+      <div> * This function will get the text of the actual HTML input tag</div>
+      <div> * for the JIGL input, when using the 'select' or 'autocomplete'</div>
+      <div> * inputs this will be the human-readable text</div>
+      <div> *</div>
+      <div> * Input Parameters:</div>
+      <div> * <b>None</b></div>
+      <div> *</div>
+      <div> * Output:</div>
+      <div> * <b>text</b> - The text of the HTML input that lies underneath the</div>
+      <div> * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JIGL input</div>
+      <div> */</div>
+      <div>&nbsp;</div>
+      <div><b>Usage:</b></div>
+      <div>$('.jigl').data().text();</div>
+      <div>&nbsp;</div>
+      <div class="code-subheader"><b>SETTER</b></div>
+      <div>/*</div>
+      <div> * $(...).data().text(newText)</div>
+      <div> *</div>
+      <div> * This function will set the text of the HTML input tag and the</div>
+      <div> * JIGL input, when using the 'select' or 'autocomplete' inputs</div>
+      <div> * this will affect the human-readable text</div>
+      <div> *</div>
+      <div> * Input Parameters:</div>
+      <div> * <b>newText</b> - The new text to set the input to</div>
+      <div> *</div>
+      <div> * Output:</div>
+      <div> * <b>None</b></div>
+      <div> */</div>
+      <div>&nbsp;</div>
+      <div><b>Usage:</b></div>
+      <div>$('.jigl').data().text("Hi There");</div>
+    </code>
+  </div>
+</div>

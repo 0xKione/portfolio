@@ -1,12 +1,18 @@
-<header class="navbar navbar-fixed-top">
+<header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "Rich Gomez", root_path, id: "logo" %>
+    <%= link_to "RG", root_path, id: "logo" %>
     <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "About", "#about" %>
-        <li><%= link_to "Skills", "#skills" %>
-        <li><%= link_to "Projects", "#projects" %>
-        <li><%= link_to "Contact", "#contact" %>
+      <ul class="nav navbar-nav">
+        <% if get_page_type(params) == 'home' %>
+        <li><%= link_to "About", "#about" %></li>
+        <li><%= link_to "Skills", "#skills" %></li>
+        <li><%= link_to "Projects", "#projects" %></li>
+        <li><%= link_to "Contact", "#contact" %></li>
+        <% elsif get_page_type(params) == 'wagekick' %>
+        <li><%= link_to "About", "#about" %></li>
+        <li><%= link_to "Screenshots", "#screenshots" %></li>
+        <li><%= link_to "Designs", "#designs" %></li>
+        <% end %>
       </ul>
     </nav>
   </div>
