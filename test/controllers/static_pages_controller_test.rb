@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
-  test "should get new" do
-    get static_pages_new_url
+  test "should get jigl" do
+    get jigl_url
     assert_response :success
   end
 
