@@ -21,7 +21,7 @@ gem 'ruby-debug-ide', '~> 0.6.0'
 gem 'webpacker',      github: 'rails/webpacker'
 
 group :development, :test do
-  #gem 'sqlite3', '1.3.12'
+  gem 'sqlite3', '1.3.12'
   gem 'byebug',  '9.0.0', platform: :mri
 end
 
@@ -46,3 +46,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Specify the Ruby version for Heroku
+ruby "2.4.0"
