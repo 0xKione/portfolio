@@ -33,13 +33,12 @@ textarea {
 }
 
 .debug_dump {
+  display: table;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
   clear: both;
-  float: left;
-  width: 100%;
   margin-top: 45px;
   @include box_sizing;
 }
